@@ -38,7 +38,7 @@ A multi-client HTTP-like client-server application written in C using TCP socket
 
 **Technologies:** C, TCP/IP, sockets, pthreads, file I/O
 
-[View HTTP Client Server](./TspProect)
+[View HTTP Client Server](./HTTP_Client_Server)
 
 ---
 
@@ -57,7 +57,7 @@ A custom Linux-style shell written in C.
 
 **Technologies:** C, Linux, processes, Bash concepts, system programming
 
-[View Custom Shell](./Shell_proect)
+[View Custom Shell](./Custom_Shell)
 
 ## Technical Skills
 

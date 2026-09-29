@@ -1,0 +1,6 @@
+.DS_Store
+*.o
+my_shell
+client
+server
+
