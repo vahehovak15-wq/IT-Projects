@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A practical, interactive DevOps learning roadmap." />
+  <title>CloudForge | DevOps Academy</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home"><span class="brand-mark">⌘</span> Cloud<span>Forge</span><small>ACADEMY</small></a>
+    <nav aria-label="Main navigation"><a href="#curriculum">Curriculum</a><a href="#journey">Learning Path</a><a href="#about">About</a></nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme">☀ Light mode</button>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy"><div class="eyebrow"><span class="status-dot"></span> YOUR DEVOPS JOURNEY STARTS HERE</div>
+        <h1>Build. Automate.<br><em>Deploy.</em> Repeat.</h1>
+        <p>Master the tools behind modern infrastructure. From your first SSH connection to production-ready Kubernetes and observability.</p>
+        <div class="hero-actions"><a class="primary-btn" href="#curriculum">Explore the course <span>↗</span></a><a class="secondary-btn" href="#journey">View learning path →</a></div>
+        <div class="hero-stats"><div><strong>10</strong><span>Core modules</span></div><div><strong>100%</strong><span>Hands-on mindset</span></div><div><strong>∞</strong><span>Things to build</span></div></div>
+      </div>
+      <div class="terminal" aria-label="Animated simulated DevOps terminal"><div class="terminal-bar"><div class="dots"><i></i><i></i><i></i></div><span>devops@cloudforge: ~/devops</span><span>● LIVE DEMO</span></div><div class="terminal-body" id="liveTerminal" role="log" aria-live="off" aria-label="Simulated DevOps command output"></div><div class="terminal-footer"><span>● SIMULATION RUNNING</span><span id="terminalStatus">AUTOMATION ACTIVE</span></div></div>
+    </section>
+    <section class="curriculum section-wrap" id="curriculum"><div class="section-heading"><div><span class="kicker">01 / THE TOOLKIT</span><h2>Your DevOps curriculum<span class="accent">.</span></h2><p>Ten essential modules. One powerful engineering skill set.</p></div><div class="progress-panel"><div class="progress-label"><span>YOUR PROGRESS</span><strong id="progressText">0 / 10 completed</strong></div><div class="progress-track"><div id="progressFill"></div></div></div></div>
+      <div class="filters" role="group" aria-label="Filter course modules"><button class="filter active" data-filter="all">All modules</button><button class="filter" data-filter="foundations">Foundations</button><button class="filter" data-filter="automation">Automation</button><button class="filter" data-filter="cloud">Cloud & Containers</button><button class="filter" data-filter="observability">Observability</button></div>
+      <div class="course-grid" id="courseGrid"></div>
+    </section>
+    <section class="journey section-wrap" id="journey"><span class="kicker">02 / THE ROADMAP</span><h2>From zero to deployment<span class="accent">.</span></h2><p class="journey-intro">A suggested order to turn scattered tools into real-world skills.</p><div class="roadmap"><div><span>01</span><strong>Connect & virtualize</strong><p>SSH · VirtualBox</p></div><div><span>02</span><strong>Automate & build</strong><p>Ansible · Docker · CI/CD</p></div><div><span>03</span><strong>Scale in the cloud</strong><p>AWS · Terraform · Kubernetes</p></div><div><span>04</span><strong>Observe everything</strong><p>Prometheus · Grafana · Loki · Alloy</p></div></div></section>
+    <section class="cta section-wrap" id="about"><div><span class="kicker">KEEP BUILDING</span><h2>Great infrastructure starts<br>with curiosity.</h2><p>Learn the concepts, practice the commands, and ship something real.</p></div><a href="#curriculum" class="primary-btn">Start learning ↗</a></section>
+  </main><footer><span>⌘ CloudForge Academy</span><span>Made for future DevOps engineers · <span id="year"></span></span></footer>
+  <dialog id="moduleDialog" aria-labelledby="dialogTitle"><button class="close-dialog" id="closeDialog" aria-label="Close details">✕</button><div class="dialog-icon" id="dialogIcon"></div><span class="kicker" id="dialogCategory"></span><h2 id="dialogTitle"></h2><p id="dialogDescription"></p><h3>What you'll learn</h3><ul id="dialogTopics"></ul><button class="primary-btn dialog-complete" id="completeButton">Mark as completed ✓</button></dialog>
+</body>
+</html>
