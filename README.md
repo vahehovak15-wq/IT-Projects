@@ -2,6 +2,14 @@
 
 This repository contains my practical projects in Linux system programming, networking, Bash scripting and cybersecurity.
 
+## 🚀 DevOps Course Website
+
+A responsive DevOps learning website built with
+HTML, CSS and JavaScript.
+
+🌐 Live Website:
+https://cloudforge.pages.dev
+
 ## Projects
 
 ### Security Log Analyzer
